@@ -22,8 +22,11 @@
 			- [Full Workflow](#full-workflow-4)
 		- [Exercise 01](#exercise-01-1)
 			- [Full Workflow](#full-workflow-5)
+			- [Hasil pme](#hasil-pme)
+			- [Hasil hme](#hasil-hme)
 		- [Exercise 02](#exercise-02-1)
 			- [Full Workflow](#full-workflow-6)
+			- [Hasil newTable](#hasil-newtable)
 ## 1_DB
 ### Exercise 01
 * Pertama saya drag newCensus.sqlite dari folder Data
@@ -33,7 +36,7 @@
 * Lalu klik Apply dan OK
 * Setelah itu buat DB Reader untuk mengimport data tersebut
 #### Full Workflow
-
+![alt text](https://github.com/ikul1234/BigData_Tugas2/blob/master/Screenshot/1_DB/01.jpg "01")
 ### Exercise 02
 #### Nomor 1
 * Pertama saya buat DB Joiner untuk join dua table tersebut
@@ -53,7 +56,7 @@
 * Masukkan juga agep untuk costum yang berisi function AVG(#COLUMN_NAME# + #SECOND_COLUMN_NAME#)
 * Lalu buat DB Reader untuk mengimport data tersebut
 #### Full Workflow
-
+![alt text](https://github.com/ikul1234/BigData_Tugas2/blob/master/Screenshot/1_DB/02.jpg "02")
 ### Exercise 03
 #### Nomor 1
 * Pertama saya buat Decision Tree Learner 
@@ -62,7 +65,7 @@
 * Pertama buat Decision Tree Predictor
 * Lalu di dalam Decision Tree Predictor ganti prediction column namenya menjadi cow
 #### Full Workflow
-
+![alt text](https://github.com/ikul1234/BigData_Tugas2/blob/master/Screenshot/1_DB/03.jpg "03")
 ### Exercise 04
 #### Nomor 1
 * Pertama saya buat DB Connection Table Writer
@@ -74,18 +77,21 @@
 * Yang atas masukkan cow
 * Yang bawah masukkan serialno
 #### Full Workflow
-
+![alt text](https://github.com/ikul1234/BigData_Tugas2/blob/master/Screenshot/1_DB/04.jpg "04")
 ## 2_Hadoop
 ### Exercise 00
 * Pertama saya ganti nama table dengan 05111740000169_(namafile) pada kedua DB Table Creator dan DB Loader
 #### Full Workflow
-
+![alt text](https://github.com/ikul1234/BigData_Tugas2/blob/master/Screenshot/2_Hadoop/0.jpg "0")
 ### Exercise 01
 * Pertama saya ganti SQLite Connector menjadi Create Local Big Data Environment dari exercise sebelumnya
 * Lalu ganti table dengan 05111740000169_ss13pme pada DB Table Selector
 #### Full Workflow
-
-
+![alt text](https://github.com/ikul1234/BigData_Tugas2/blob/master/Screenshot/2_Hadoop/1.jpg "1")
+#### Hasil pme
+![alt text](https://github.com/ikul1234/BigData_Tugas2/blob/master/Screenshot/2_Hadoop/pme.jpg "pme")
+#### Hasil hme
+![alt text](https://github.com/ikul1234/BigData_Tugas2/blob/master/Screenshot/2_Hadoop/hme.jpg "hme")
 ### Exercise 02
 * Pertama ubah nama tabel pada DB Table Selector menjadi 05111740000169_ss13pme
 * Lalu tambahkan DB Table Creator dengan koneksi dari hive dan concatenate
@@ -97,3 +103,6 @@
 * Setelah itu buat DB Loader dengan input String Manipulation, DB Table Creator, Concatenate, dan Koneksi Hive
 * Di dalamnya ganti nama tabel menjadi 05111740000169_newTable
 #### Full Workflow
+![alt text](https://github.com/ikul1234/BigData_Tugas2/blob/master/Screenshot/2_Hadoop/2.jpg "2")
+#### Hasil newTable
+![alt text](https://github.com/ikul1234/BigData_Tugas2/blob/master/Screenshot/2_Hadoop/newTable.jpg "newTable")
